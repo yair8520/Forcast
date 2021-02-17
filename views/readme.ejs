@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Readme</title>
+
+</head>
+<body>
+<!-- Main content -->
+<h1>Internet Course - Exercise 3</h1>
+<h2>Author</h2>
+<ul>
+    <li>Netanel Kahanyan</li>
+    <li>ID 314715335</li>
+    <li>netanelka@std.hac.ac.il</li>
+    <br>
+    <li>Yair Gabay</li>
+    <li>ID 312244163</li>
+    <li>yairga@std.hac.ac.il</li>
+</ul>
+
+<h2>Execution</h2>
+<p>The submission is a WebStorm project that can be run directly from the IDE.</p>
+
+<h2>Assumptions</h2>
+<p>The site use bootstap CDN therefore assumes an internet connection is available.</p>
+
+<p style="color: red">Place name validition: clean digits, deleting duplicates  </p>
+<h2>Registration page Email check:</h2>
+    <ul>
+        <li> On the server side if the email already exists - returns an error message.</li>
+        <li> On the client side check if the fields are empty.</li>
+        <li> Check if the customer is already logged in and if so redirected back to the forecast page.</li>
+    </ul>
+<h2>Login page:</h2>
+<ul>
+    <li> If the user is not registered, an error message is received.</li>
+    <li> If the password does not match the email, there is an error message.</li>
+    <li> If the user is already logged in, he will be directed to the forecast.</li>
+    <li> After leaving, go directly to the login page.</li>
+</ul>
+<h2>Forecast page:</h2>
+<p>
+    Duplicates are not allowed.
+    If a session does not exist, actions can not be performed on this page and the user will be taken back to the login page.<br><br><br>
+    * Any error in the data structure of the user will be transferred to the registration / login page<br>
+    ** All error messages will disappear when the page is refreshed<br>
+    *** any different address will direct us to the registration page
+</p>
+<address>Submitted 20 November 2020 </address>
+
+    <form action="/weather" method="get">
+        <button type="submit" id="logout" class="btn btn-outline-success">return to weather</button>
+    </form>
+</body>
+</html>
